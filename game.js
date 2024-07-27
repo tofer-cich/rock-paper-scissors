@@ -75,3 +75,19 @@ function playRound(getHumanChoice, getComputerChoice) {
 // if humanScore < computerScore, computer wins.
 // if humanScore === computerScore, tie.
 
+function playGame() {
+    for (i = 0; i < 5; i++) {
+        playRound(getHumanChoice, getComputerChoice);
+    }
+
+    if (humanScore > computerScore) {
+        console.log("You Won the Game!!!");
+    } else if (computerScore > humanScore) {
+        console.log("You Lost the Game... Sorry.");
+    } else {
+        console.log("It's a Draw!?");
+    }
+
+}
+
+playGame();

@@ -35,6 +35,8 @@ function playRound(getHumanChoice, getComputerChoice) {
     let computerChoice = getComputerChoice();
     let humanChoice = getHumanChoice();
 
+    
+
     if (humanChoice === "rock") {
         if (computerChoice === "rock") {
             console.log("Tie...")
